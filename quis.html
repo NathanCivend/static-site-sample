@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civend Quiz - Diagnóstico de Marketing e Vendas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Diagnóstico de Marketing e Vendas</h2>
+        <form id="quizForm">
+
+            <div class="question">
+                <p>1. Como você gera novos leads para sua empresa?</p>
+                <label><input type="radio" name="q1" value="1"> (A) Apenas por indicação ou boca a boca.</label><br>
+                <label><input type="radio" name="q1" value="2"> (B) Utilizamos redes sociais, mas sem tráfego pago.</label><br>
+                <label><input type="radio" name="q1" value="3"> (C) Temos campanhas pagas, mas sem estratégia definida.</label><br>
+                <label><input type="radio" name="q1" value="4"> (D) Temos campanhas pagas estruturadas e previsíveis.</label>
+            </div>
+
+            <div class="question">
+                <p>2. Você utiliza uma landing page ou formulário para captar leads?</p>
+                <label><input type="radio" name="q2" value="1"> (A) Não utilizamos landing pages.</label><br>
+                <label><input type="radio" name="q2" value="2"> (B) Temos um formulário, mas não acompanhamos os leads.</label><br>
+                <label><input type="radio" name="q2" value="3"> (C) Temos uma landing page e captamos leads, mas sem acompanhamento estruturado.</label><br>
+                <label><input type="radio" name="q2" value="4"> (D) Temos uma landing page otimizada com acompanhamento diário.</label>
+            </div>
+
+            <div class="question">
+                <p>3. Qual a média de leads que sua empresa gera por mês?</p>
+                <label><input type="radio" name="q3" value="1"> (A) Menos de 50.</label><br>
+                <label><input type="radio" name="q3" value="2"> (B) Entre 50 e 200.</label><br>
+                <label><input type="radio" name="q3" value="3"> (C) Entre 200 e 500.</label><br>
+                <label><input type="radio" name="q3" value="4"> (D) Mais de 500.</label>
+            </div>
+
+            <div class="question">
+                <p>4. Como você acompanha os leads que entram no funil?</p>
+                <label><input type="radio" name="q4" value="1"> (A) Não temos um processo definido.</label><br>
+                <label><input type="radio" name="q4" value="2"> (B) Usamos uma planilha manual.</label><br>
+                <label><input type="radio" name="q4" value="3"> (C) Temos um CRM, mas não utilizamos 100%.</label><br>
+                <label><input type="radio" name="q4" value="4"> (D) Usamos CRM e temos automações de follow-up.</label>
+            </div>
+
+            <div class="question">
+                <p>5. Seu time entra em contato com leads novos?</p>
+                <label><input type="radio" name="q5" value="1"> (A) Não temos equipe comercial.</label><br>
+                <label><input type="radio" name="q5" value="2"> (B) Entramos em contato, mas sem padronização.</label><br>
+                <label><input type="radio" name="q5" value="3"> (C) Entramos em contato com um processo básico.</label><br>
+                <label><input type="radio" name="q5" value="4"> (D) Temos um time de SDR com scripts e processos definidos.</label>
+            </div>
+
+            <div class="question">
+                <p>6. Quanto tempo sua empresa demora para entrar em contato com um lead novo?</p>
+                <label><input type="radio" name="q6" value="1"> (A) Mais de 24 horas.</label><br>
+                <label><input type="radio" name="q6" value="2"> (B) Entre 12 e 24 horas.</label><br>
+                <label><input type="radio" name="q6" value="3"> (C) Menos de 6 horas.</label><br>
+                <label><input type="radio" name="q6" value="4"> (D) Menos de 1 hora.</label>
+            </div>
+
+            <div class="question">
+                <p>7. Seu time comercial tem um processo de fechamento estruturado?</p>
+                <label><input type="radio" name="q7" value="1"> (A) Não temos um time comercial.</label><br>
+                <label><input type="radio" name="q7" value="2"> (B) Os vendedores negociam, mas sem um processo claro.</label><br>
+                <label><input type="radio" name="q7" value="3"> (C) Temos um processo, mas sem um acompanhamento rigoroso.</label><br>
+                <label><input type="radio" name="q7" value="4"> (D) Temos um funil estruturado com metas e indicadores.</label>
+            </div>
+
+            <div class="question">
+                <p>8. Como sua empresa acompanha propostas enviadas para clientes?</p>
+                <label><input type="radio" name="q8" value="1"> (A) Não temos controle sobre isso.</label><br>
+                <label><input type="radio" name="q8" value="2"> (B) Acompanhamos por planilhas.</label><br>
+                <label><input type="radio" name="q8" value="3"> (C) Usamos CRM, mas não acompanhamos de forma efetiva.</label><br>
+                <label><input type="radio" name="q8" value="4"> (D) Usamos CRM e acompanhamos cada proposta ativamente.</label>
+            </div>
+
+            <div class="question">
+                <p>9. Qual a taxa de conversão da sua empresa (leads que viram clientes)?</p>
+                <label><input type="radio" name="q9" value="1"> (A) Não sabemos.</label><br>
+                <label><input type="radio" name="q9" value="2"> (B) Menos de 5%.</label><br>
+                <label><input type="radio" name="q9" value="3"> (C) Entre 5% e 15%.</label><br>
+                <label><input type="radio" name="q9" value="4"> (D) Acima de 15%.</label>
+            </div>
+
+            <div class="question">
+                <p>10. Você trabalha estratégias de fidelização e recompra?</p>
+                <label><input type="radio" name="q10" value="1"> (A) Não trabalhamos.</label><br>
+                <label><input type="radio" name="q10" value="2"> (B) Temos contato ocasional, mas sem estratégia clara.</label><br>
+                <label><input type="radio" name="q10" value="3"> (C) Fazemos follow-up esporádico com clientes antigos.</label><br>
+                <label><input type="radio" name="q10" value="4"> (D) Temos um programa ativo de recompra e indicação.</label>
+            </div>
+
+            <div class="question">
+                <p>11. Como sua empresa mede a satisfação dos clientes?</p>
+                <label><input type="radio" name="q11" value="1"> (A) Não medimos.</label><br>
+                <label><input type="radio" name="q11" value="2"> (B) Perguntamos informalmente.</label><br>
+                <label><input type="radio" name="q11" value="3"> (C) Fazemos pesquisas ocasionais.</label><br>
+                <label><input type="radio" name="q11" value="4"> (D) Temos um processo estruturado com NPS ou avaliações frequentes.</label>
+            </div>
+
+            <button type="button" onclick="calcularResultado()">Ver Resultado</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calcularResultado() {
+            let score = 0;
+            let totalQuestions = 11; // Atualizado para 11 perguntas
+
+            for (let i = 1; i <= totalQuestions; i++) {
+                let selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected) {
+                    score += parseInt(selected.value);
+                }
+            }
+
+            let resultadoTexto = "";
+            if (score <= 15) {
+                resultadoTexto = "🚩 Nível Iniciante - Muitos pontos de melhoria!";
+            } else if (score <= 30) {
+                resultadoTexto = "🔧 Nível Intermediário - Boas práticas, mas melhorias necessárias.";
+            } else {
+                resultadoTexto = "🚀 Nível Avançado - Estratégia bem estruturada!";
+            }
+
+            document.getElementById("result").innerHTML = resultadoTexto;
+        }
+    </script>
+</body>
+</html>
